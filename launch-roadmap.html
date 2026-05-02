@@ -117,6 +117,17 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
 }
 
 .floating-back { position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 1000; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); } .floating-back:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); } .floating-back svg { width: 20px; height: 20px; fill: none; stroke: #2A3A50; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } @media (max-width: 768px) { .floating-back { bottom: 20px; right: 20px; width: 45px; height: 45px; } }
+
+/* Mobile Font Size Improvements */
+@media(max-width: 768px) {
+  html { font-size: 18px; } /* Increase base font size for mobile */
+  .htitle, .ht { font-size: 1.8rem !important; }
+  .hsub, .hs { font-size: 1.1rem !important; line-height: 1.6 !important; }
+  .pt, .st { font-size: 1.3rem !important; }
+  .pd, .cb, .fbd, .tbl td { font-size: 1rem !important; line-height: 1.6 !important; }
+  .grid { gap: 20px !important; }
+  .pc, .card { padding: 25px 20px !important; }
+}
 </style>
 </head>
 <body>
@@ -179,6 +190,6 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
 </div>
 <div class="foot"><div class="ftxt en">WOSOL CONCIERGE · SUB-BRAND GROWTH HUB · CONFIDENTIAL · 2026</div></div>
 
-<a href="index.html" class="floating-back" title="العودة للرئيسية"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></a>
+<a href="index.html" class="floating-back" title="العودة للرئيسية"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
 </body>
 </html>

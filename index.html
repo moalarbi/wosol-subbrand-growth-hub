@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{--n:#041026;--n2:#16304E;--c:#EDE9E3;--s:#D1C7BA;--bg:#F6F4F1;--w:#FFFFFF;--t:#2A3A50;--m:#68707D;--g:#B99A5B;--br:rgba(4,16,38,.09);--pat:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='%23D1C7BA' stroke-width='.5' opacity='.04'%3E%3Cpath d='M30 5L55 30L30 55L5 30Z'/%3E%3Cpath d='M30 18L42 30L30 42L18 30Z'/%3E%3Cline x1='30' y1='0' x2='30' y2='60'/%3E%3Cline x1='0' y1='30' x2='60' y2='30'/%3E%3C/g%3E%3C/svg%3E");}
+:root{--n:#041026;--n2:#16304E;--c:#EDE9E3;--s:#D1C7BA;--bg:#F9F8F6;--w:#FFFFFF;--t:#2A3A50;--m:#68707D;--g:#B99A5B;--br:rgba(4,16,38,.06);--pat:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='%23D1C7BA' stroke-width='.5' opacity='.04'%3E%3Cpath d='M30 5L55 30L30 55L5 30Z'/%3E%3Cpath d='M30 18L42 30L30 42L18 30Z'/%3E%3Cline x1='30' y1='0' x2='30' y2='60'/%3E%3Cline x1='0' y1='30' x2='60' y2='30'/%3E%3C/g%3E%3C/svg%3E");}
 html{font-size:16px;scroll-behavior:smooth;}
 body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:var(--t);-webkit-font-smoothing:antialiased;}
 .en{font-family:'Poppins',sans-serif!important;}
@@ -50,7 +50,7 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
 .pft{padding:13px 20px;border-top:1px solid var(--br);display:flex;align-items:center;justify-content:space-between;}
 .pcta{font-family:'Poppins',sans-serif;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--g);}
 .parr{font-size:16px;color:rgba(185,154,91,.38);transition:transform .2s;}
-.pc:hover .parr{transform:translateX(-4px);}
+.pc:hover .parr{transform:translateX(4px);}
 /* SECTION DIVIDER */
 .sdiv{max-width:1120px;margin:0 auto;padding:0 40px 12px;}
 .sdlbl{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:rgba(185,154,91,.5);padding-bottom:10px;border-bottom:1px solid var(--br);margin-bottom:14px;}
@@ -60,6 +60,22 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
 /* MOBILE */
 @media(max-width:1024px){.grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:600px){.grid{grid-template-columns:1fr;}.grid-wrap,.intro,.sdiv{padding-left:20px;padding-right:20px;}.hero{padding:64px 20px 52px;}}
+
+/* Mobile Font Size Improvements */
+@media(max-width: 768px) {
+  html { font-size: 18px; } /* Increase base font size for mobile */
+  .htitle, .ht { font-size: 1.8rem !important; }
+  .hsub, .hs { font-size: 1.1rem !important; line-height: 1.6 !important; }
+  .pt, .st { font-size: 1.3rem !important; }
+  .pd, .cb, .fbd, .tbl td { font-size: 1rem !important; line-height: 1.6 !important; }
+  .grid { gap: 20px !important; }
+  .pc, .card { padding: 25px 20px !important; }
+}
+
+.pc { border-radius: 0; border: 1px solid var(--br); background: #fff; box-shadow: none; }
+.pc:hover { box-shadow: 0 10px 30px rgba(4,16,38,0.05); transform: translateY(-5px); border-color: var(--g); }
+.pft { background: #F9F8F6; }
+.pcta { font-weight: 600; color: var(--n); }
 </style>
 </head>
 <body>
@@ -85,19 +101,19 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
   <div class="grid">
     <a href="idea-overview.html" class="pc">
       <div class="pb"><span class="pn en">01</span><div class="pt">شرح الفكرة</div><p class="pd">لماذا نبني شركتين فرعيتين بدل التسويق المباشر فقط.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
     <a href="subbrand-business-model.html" class="pc">
       <div class="pb"><span class="pn en">02</span><div class="pt">نموذج العمل</div><p class="pd">كيف تكسب الشركتان وتعملان كفلتر للعملاء المناسبين.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
     <a href="wosol-journeys.html" class="pc featured">
       <div class="pb"><span class="pn en">03</span><div class="pt">WOSOL Journeys</div><p class="pd">براند السفر والرحلات الفاخرة — الخدمات والإيراد والفرص.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
     <a href="wosol-moments.html" class="pc featured">
       <div class="pb"><span class="pn en">04</span><div class="pt">WOSOL Moments</div><p class="pd">براند المناسبات والهدايا والتجارب الخاصة.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
   </div>
 
@@ -106,19 +122,19 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
   <div class="grid">
     <a href="services-revenue-filtering.html" class="pc">
       <div class="pb"><span class="pn en">05</span><div class="pt">الخدمات والريفنيو وفلترة VIP</div><p class="pd">قائمة الخدمات التي تبيع وتكشف العملاء عالي القيمة.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
     <a href="lead-generation-funnel.html" class="pc">
       <div class="pb"><span class="pn en">06</span><div class="pt">فانل توليد العملاء</div><p class="pd">من الإعلان إلى الخدمة المدفوعة إلى العضوية.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
     <a href="website-social-setup.html" class="pc">
       <div class="pb"><span class="pn en">07</span><div class="pt">تجهيز المواقع والسوشيال</div><p class="pd">ما نحتاجه لكل براند من موقع وحسابات وربط CRM.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
     <a href="content-ads-plan.html" class="pc">
       <div class="pb"><span class="pn en">08</span><div class="pt">خطة المحتوى والإعلانات</div><p class="pd">محتوى وإعلانات تجذب طلبات فاخرة مؤهلة.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
   </div>
 
@@ -127,19 +143,19 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
   <div class="grid">
     <a href="crm-workflow.html" class="pc">
       <div class="pb"><span class="pn en">09</span><div class="pt">ورك فلو CRM</div><p class="pd">كيف نصنف العملاء ونحفظ بياناتهم ونقيس جاهزيتهم.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
     <a href="operations-workflow.html" class="pc">
       <div class="pb"><span class="pn en">10</span><div class="pt">ورك فلو التشغيل</div><p class="pd">من الطلب إلى التنفيذ إلى فرصة العضوية.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
     <a href="membership-conversion.html" class="pc featured">
       <div class="pb"><span class="pn en">11</span><div class="pt">تحويل العميل إلى عضوية</div><p class="pd">متى وكيف نعرض عضوية WOSOL على العميل المناسب.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
     <a href="launch-roadmap.html" class="pc">
       <div class="pb"><span class="pn en">12</span><div class="pt">خارطة الإطلاق</div><p class="pd">90 يوم من التجهيز إلى التوسع — ماذا ننفذ أسبوعيًا.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
   </div>
 
@@ -148,11 +164,11 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
   <div class="grid" style="grid-template-columns:repeat(2,1fr);">
     <a href="kpi-dashboard.html" class="pc">
       <div class="pb"><span class="pn en">13</span><div class="pt">لوحة المؤشرات</div><p class="pd">الأرقام التي نتابعها أسبوعيًا لاتخاذ قرارات واضحة.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
     <a href="brand-governance.html" class="pc">
       <div class="pb"><span class="pn en">14</span><div class="pt">حوكمة البراند</div><p class="pd">كيف نطلق براندين فرعيين بدون تشتيت هوية WOSOL.</p></div>
-      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">→</span></div>
     </a>
   </div>
 </div>
