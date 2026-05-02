@@ -115,15 +115,14 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
   .fi{border-left:1px solid var(--br);border-top:none;}
   .fi:first-child{border-top:1px solid var(--br);}
 }
+
+.floating-back { position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 1000; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); } .floating-back:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); } .floating-back svg { width: 20px; height: 20px; fill: none; stroke: #2A3A50; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } @media (max-width: 768px) { .floating-back { bottom: 20px; right: 20px; width: 45px; height: 45px; } }
 </style>
 </head>
 <body>
 <nav class="nav">
   <a href="index.html" class="logo"><span class="lw en">WOSOL</span><span class="ls en">CONCIERGE</span></a>
-  <div class="nr">
-    <a href="index.html" class="back en">← Hub</a>
-    <button class="pbtn en" onclick="window.print()">PDF</button>
-  </div>
+  
 </nav>
 <div class="hero">
   <div class="hi">
@@ -182,5 +181,7 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
 </div>
 </div>
 <div class="foot"><div class="ftxt en">WOSOL CONCIERGE · SUB-BRAND GROWTH HUB · CONFIDENTIAL · 2026</div></div>
+
+<a href="index.html" class="floating-back" title="العودة للرئيسية"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></a>
 </body>
 </html>
