@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>WOSOL Sub-Brand Growth Hub | بوابة البراندات الفرعية</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--n:#041026;--n2:#16304E;--c:#EDE9E3;--s:#D1C7BA;--bg:#F6F4F1;--w:#FFFFFF;--t:#2A3A50;--m:#68707D;--g:#B99A5B;--br:rgba(4,16,38,.09);--pat:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='%23D1C7BA' stroke-width='.5' opacity='.04'%3E%3Cpath d='M30 5L55 30L30 55L5 30Z'/%3E%3Cpath d='M30 18L42 30L30 42L18 30Z'/%3E%3Cline x1='30' y1='0' x2='30' y2='60'/%3E%3Cline x1='0' y1='30' x2='60' y2='30'/%3E%3C/g%3E%3C/svg%3E");}
+html{font-size:16px;scroll-behavior:smooth;}
+body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:var(--t);-webkit-font-smoothing:antialiased;}
+.en{font-family:'Poppins',sans-serif!important;}
+/* HERO */
+.hero{background:var(--n);position:relative;overflow:hidden;padding:88px 40px 72px;text-align:center;}
+.hero::before{content:'';position:absolute;inset:0;background-image:var(--pat);}
+.hero::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:620px;height:620px;border-radius:50%;border:1px solid rgba(209,199,186,.04);pointer-events:none;}
+.hi{position:relative;z-index:1;max-width:760px;margin:0 auto;}
+.htag{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:rgba(185,154,91,.55);margin-bottom:22px;display:block;}
+.hlogo{display:flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:36px;}
+.hw{font-family:'Poppins',sans-serif;font-size:clamp(34px,6vw,62px);font-weight:300;letter-spacing:.18em;color:var(--s);line-height:1;}
+.hls{font-family:'Poppins',sans-serif;font-size:clamp(8px,1.2vw,11px);letter-spacing:.38em;text-transform:uppercase;color:rgba(209,199,186,.36);}
+.hdv{width:52px;height:1px;background:var(--g);margin:0 auto 34px;opacity:.44;}
+.htitle{font-size:clamp(22px,3.5vw,36px);font-weight:700;color:var(--c);line-height:1.3;margin-bottom:10px;}
+.hsub{font-size:14.5px;font-weight:300;color:rgba(237,233,227,.44);line-height:1.85;max-width:640px;margin:0 auto;}
+/* INTRO */
+.intro{max-width:1120px;margin:0 auto;padding:52px 40px 8px;}
+.intro-txt{font-size:15px;font-weight:300;color:var(--m);line-height:1.9;max-width:720px;margin:0 auto;text-align:center;}
+/* GRID */
+.grid-wrap{max-width:1120px;margin:0 auto;padding:44px 40px 64px;}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:13px;}
+/* PORTAL CARD */
+.pc{background:var(--w);border:1px solid var(--br);text-decoration:none;display:flex;flex-direction:column;overflow:hidden;transition:all .28s;position:relative;}
+.pc::before{content:'';position:absolute;top:0;right:0;left:0;height:2px;background:linear-gradient(90deg,var(--g),var(--n2));transform:scaleX(0);transform-origin:right;transition:transform .3s;}
+.pc:hover{box-shadow:0 8px 30px rgba(4,16,38,.1);transform:translateY(-4px);}
+.pc:hover::before{transform:scaleX(1);}
+/* Featured cards */
+.pc.featured{background:var(--n);}
+.pc.featured .pn{color:rgba(185,154,91,.55);}
+.pc.featured .pt{color:var(--c);}
+.pc.featured .pd{color:rgba(237,233,227,.48);}
+.pc.featured .pft{border-top-color:rgba(209,199,186,.1);}
+.pc.featured .pcta{color:var(--g);}
+/* Body */
+.pb{padding:26px 20px;flex:1;}
+.pn{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--g);margin-bottom:11px;display:block;}
+.pt{font-size:16px;font-weight:700;color:var(--t);margin-bottom:9px;line-height:1.35;}
+.pd{font-size:12.5px;font-weight:300;color:var(--m);line-height:1.75;}
+/* Footer */
+.pft{padding:13px 20px;border-top:1px solid var(--br);display:flex;align-items:center;justify-content:space-between;}
+.pcta{font-family:'Poppins',sans-serif;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--g);}
+.parr{font-size:16px;color:rgba(185,154,91,.38);transition:transform .2s;}
+.pc:hover .parr{transform:translateX(-4px);}
+/* SECTION DIVIDER */
+.sdiv{max-width:1120px;margin:0 auto;padding:0 40px 12px;}
+.sdlbl{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:rgba(185,154,91,.5);padding-bottom:10px;border-bottom:1px solid var(--br);margin-bottom:14px;}
+/* FOOT */
+.foot{background:var(--n);padding:28px 40px;text-align:center;border-top:1px solid rgba(209,199,186,.08);}
+.ftxt{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(209,199,186,.2);}
+/* MOBILE */
+@media(max-width:1024px){.grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.grid{grid-template-columns:1fr;}.grid-wrap,.intro,.sdiv{padding-left:20px;padding-right:20px;}.hero{padding:64px 20px 52px;}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hi">
+    <span class="htag en">Sub-Brand Growth Hub · Confidential · 2026</span>
+    <div class="hlogo">
+      <div class="hw en">WOSOL</div>
+      <div class="hls en">CONCIERGE</div>
+    </div>
+    <div class="hdv"></div>
+    <h1 class="htitle">بوابة استراتيجية البراندات الفرعية</h1>
+    <p class="hsub">صفحات تنفيذية مختصرة تشرح كيف نبني شركتين فرعيتين تحت WOSOL Concierge، نبيع من خلالهما خدمات فاخرة، ونحوّل العملاء المناسبين إلى العضوية.</p>
+  </div>
+</div>
+
+<div class="intro">
+  <p class="intro-txt">هذه البوابة تجمع كل ما يحتاجه صاحب القرار لفهم الفكرة وتنفيذها: البراندين، الخدمات، الفانل، المواقع، المحتوى، التشغيل، التحويل، والقياس.</p>
+</div>
+
+<div class="grid-wrap">
+  <!-- Row 1: Strategy -->
+  <div class="sdiv"><div class="sdlbl en">Strategy Foundation</div></div>
+  <div class="grid">
+    <a href="idea-overview.html" class="pc">
+      <div class="pb"><span class="pn en">01</span><div class="pt">شرح الفكرة</div><p class="pd">لماذا نبني شركتين فرعيتين بدل التسويق المباشر فقط.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+    <a href="subbrand-business-model.html" class="pc">
+      <div class="pb"><span class="pn en">02</span><div class="pt">نموذج العمل</div><p class="pd">كيف تكسب الشركتان وتعملان كفلتر للعملاء المناسبين.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+    <a href="wosol-journeys.html" class="pc featured">
+      <div class="pb"><span class="pn en">03</span><div class="pt">WOSOL Journeys</div><p class="pd">براند السفر والرحلات الفاخرة — الخدمات والإيراد والفرص.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+    <a href="wosol-moments.html" class="pc featured">
+      <div class="pb"><span class="pn en">04</span><div class="pt">WOSOL Moments</div><p class="pd">براند المناسبات والهدايا والتجارب الخاصة.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+  </div>
+
+  <!-- Row 2: Execution -->
+  <div class="sdiv"><div class="sdlbl en">Execution System</div></div>
+  <div class="grid">
+    <a href="services-revenue-filtering.html" class="pc">
+      <div class="pb"><span class="pn en">05</span><div class="pt">الخدمات والريفنيو وفلترة VIP</div><p class="pd">قائمة الخدمات التي تبيع وتكشف العملاء عالي القيمة.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+    <a href="lead-generation-funnel.html" class="pc">
+      <div class="pb"><span class="pn en">06</span><div class="pt">فانل توليد العملاء</div><p class="pd">من الإعلان إلى الخدمة المدفوعة إلى العضوية.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+    <a href="website-social-setup.html" class="pc">
+      <div class="pb"><span class="pn en">07</span><div class="pt">تجهيز المواقع والسوشيال</div><p class="pd">ما نحتاجه لكل براند من موقع وحسابات وربط CRM.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+    <a href="content-ads-plan.html" class="pc">
+      <div class="pb"><span class="pn en">08</span><div class="pt">خطة المحتوى والإعلانات</div><p class="pd">محتوى وإعلانات تجذب طلبات فاخرة مؤهلة.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+  </div>
+
+  <!-- Row 3: Operations -->
+  <div class="sdiv"><div class="sdlbl en">Operations & Growth</div></div>
+  <div class="grid">
+    <a href="crm-workflow.html" class="pc">
+      <div class="pb"><span class="pn en">09</span><div class="pt">ورك فلو CRM</div><p class="pd">كيف نصنف العملاء ونحفظ بياناتهم ونقيس جاهزيتهم.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+    <a href="operations-workflow.html" class="pc">
+      <div class="pb"><span class="pn en">10</span><div class="pt">ورك فلو التشغيل</div><p class="pd">من الطلب إلى التنفيذ إلى فرصة العضوية.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+    <a href="membership-conversion.html" class="pc featured">
+      <div class="pb"><span class="pn en">11</span><div class="pt">تحويل العميل إلى عضوية</div><p class="pd">متى وكيف نعرض عضوية WOSOL على العميل المناسب.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+    <a href="launch-roadmap.html" class="pc">
+      <div class="pb"><span class="pn en">12</span><div class="pt">خارطة الإطلاق</div><p class="pd">90 يوم من التجهيز إلى التوسع — ماذا ننفذ أسبوعيًا.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+  </div>
+
+  <!-- Row 4: Governance -->
+  <div class="sdiv"><div class="sdlbl en">Measurement & Governance</div></div>
+  <div class="grid" style="grid-template-columns:repeat(2,1fr);">
+    <a href="kpi-dashboard.html" class="pc">
+      <div class="pb"><span class="pn en">13</span><div class="pt">لوحة المؤشرات</div><p class="pd">الأرقام التي نتابعها أسبوعيًا لاتخاذ قرارات واضحة.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+    <a href="brand-governance.html" class="pc">
+      <div class="pb"><span class="pn en">14</span><div class="pt">حوكمة البراند</div><p class="pd">كيف نطلق براندين فرعيين بدون تشتيت هوية WOSOL.</p></div>
+      <div class="pft"><span class="pcta en">فتح</span><span class="parr">←</span></div>
+    </a>
+  </div>
+</div>
+
+<div class="foot">
+  <div class="ftxt en">WOSOL CONCIERGE · SUB-BRAND GROWTH HUB · PREPARED FOR EXECUTIVE REVIEW · CONFIDENTIAL · 2026</div>
+</div>
+</body>
+</html>

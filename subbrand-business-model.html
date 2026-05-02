@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>نموذج عمل الشركتين الفرعيتين | WOSOL Concierge</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --n:#041026;--n2:#16304E;--n3:#1F466D;
+  --c:#EDE9E3;--s:#D1C7BA;--bg:#F6F4F1;
+  --w:#FFFFFF;--t:#2A3A50;--m:#68707D;
+  --g:#B99A5B;--g2:rgba(185,154,91,.14);
+  --br:rgba(4,16,38,.09);
+  --pat:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='%23D1C7BA' stroke-width='.5' opacity='.04'%3E%3Cpath d='M30 5L55 30L30 55L5 30Z'/%3E%3Cpath d='M30 18L42 30L30 42L18 30Z'/%3E%3Cline x1='30' y1='0' x2='30' y2='60'/%3E%3Cline x1='0' y1='30' x2='60' y2='30'/%3E%3C/g%3E%3C/svg%3E");
+}
+html{font-size:16px;scroll-behavior:smooth;}
+body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:var(--t);line-height:1.7;-webkit-font-smoothing:antialiased;}
+.en{font-family:'Poppins',sans-serif!important;}
+/* NAV */
+.nav{background:var(--n);border-bottom:1px solid rgba(209,199,186,.1);padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
+.logo{display:flex;align-items:baseline;gap:8px;text-decoration:none;}
+.lw{font-family:'Poppins',sans-serif!important;font-size:17px;font-weight:600;letter-spacing:.2em;color:var(--s);}
+.ls{font-family:'Poppins',sans-serif!important;font-size:7px;letter-spacing:.32em;text-transform:uppercase;color:rgba(209,199,186,.38);}
+.nr{display:flex;gap:10px;align-items:center;}
+.back{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(237,233,227,.42);text-decoration:none;border:1px solid rgba(209,199,186,.18);padding:7px 14px;transition:all .2s;}
+.back:hover{color:var(--s);border-color:rgba(209,199,186,.38);}
+.pbtn{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;background:rgba(185,154,91,.1);color:var(--g);border:1px solid rgba(185,154,91,.2);padding:7px 14px;cursor:pointer;transition:all .2s;}
+.pbtn:hover{background:rgba(185,154,91,.2);}
+/* HERO */
+.hero{background:var(--n);position:relative;overflow:hidden;padding:72px 40px 60px;text-align:center;}
+.hero::before{content:'';position:absolute;inset:0;background-image:var(--pat);}
+.hi{position:relative;z-index:1;max-width:700px;margin:0 auto;}
+.htag{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:rgba(185,154,91,.58);margin-bottom:18px;display:block;}
+.ht{font-size:clamp(26px,4vw,42px);font-weight:700;color:var(--c);line-height:1.25;margin-bottom:8px;}
+.hs{font-size:14px;font-weight:300;color:rgba(237,233,227,.46);margin-top:10px;}
+.hdv{width:44px;height:2px;background:var(--g);margin:18px auto 0;}
+/* WRAP */
+.wrap{max-width:1080px;margin:0 auto;padding:60px 40px;}
+/* SEC */
+.sec{margin-bottom:52px;}
+.slb{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--g);margin-bottom:10px;display:block;}
+.st{font-size:clamp(20px,3vw,28px);font-weight:700;color:var(--t);margin-bottom:5px;}
+.std{font-size:clamp(20px,3vw,28px);font-weight:700;color:var(--c);margin-bottom:5px;}
+.ss{font-size:14px;font-weight:300;color:var(--m);margin-bottom:22px;}
+.dv{width:34px;height:2px;background:var(--g);margin-bottom:22px;}
+/* GRIDS */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:13px;}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;}
+/* CARDS */
+.card{background:var(--w);border:1px solid var(--br);padding:22px 18px;position:relative;transition:all .22s;}
+.card::before{content:'';position:absolute;top:0;right:0;width:3px;height:26px;background:var(--g);}
+.card:hover{box-shadow:0 5px 20px rgba(4,16,38,.07);transform:translateY(-2px);}
+.crd{background:rgba(255,255,255,.04);border:1px solid rgba(209,199,186,.1);padding:22px 18px;position:relative;}
+.crd::before{content:'';position:absolute;top:0;right:0;width:3px;height:26px;background:var(--g);}
+.ctg{font-family:'Poppins',sans-serif;font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:var(--g);margin-bottom:7px;display:block;}
+.ct{font-size:14.5px;font-weight:700;color:var(--t);margin-bottom:7px;}
+.ctd{font-size:14.5px;font-weight:700;color:var(--s);margin-bottom:7px;}
+.cb{font-size:12.5px;font-weight:300;color:var(--m);line-height:1.75;}
+.cbd{font-size:12.5px;font-weight:300;color:rgba(237,233,227,.55);line-height:1.75;}
+/* DARK SECTION */
+.sdb{background:var(--n);position:relative;overflow:hidden;margin:48px -40px;padding:48px 40px;}
+.sdb::before{content:'';position:absolute;inset:0;background-image:var(--pat);}
+.sdbi{max-width:1080px;margin:0 auto;position:relative;z-index:1;}
+/* BULLET */
+.bl{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.bl li{font-size:13.5px;color:var(--t);padding-right:16px;position:relative;line-height:1.7;}
+.bl li::before{content:'·';position:absolute;right:0;color:var(--g);font-size:18px;top:-2px;}
+.bld li{color:rgba(237,233,227,.65);}
+/* KEY LINE */
+.kl{background:var(--g2);border-right:3px solid var(--g);padding:15px 20px;font-size:15px;font-weight:600;color:var(--t);line-height:1.75;margin-top:20px;}
+.kld{background:rgba(185,154,91,.09);border-right:3px solid var(--g);padding:15px 20px;font-size:15px;font-weight:600;color:var(--c);line-height:1.75;}
+/* FLOW */
+.flow{display:flex;gap:0;margin:20px 0;}
+.fi{flex:1;padding:18px 13px;background:var(--w);border:1px solid var(--br);border-left:none;text-align:center;transition:all .25s;}
+.fi:first-child{border-left:1px solid var(--br);}
+.fi:hover{background:var(--n);transform:translateY(-3px);}
+.fi:hover .fn,.fi:hover .ftl{color:rgba(237,233,227,.5);}
+.fi:hover .ftl{color:#fff;}
+.fn{font-family:'Poppins',sans-serif;font-size:22px;font-weight:300;color:rgba(185,154,91,.45);display:block;margin-bottom:7px;transition:color .3s;}
+.ftl{font-size:13px;font-weight:700;color:var(--t);margin-bottom:3px;transition:color .3s;}
+.fbd{font-size:11px;font-weight:300;color:var(--m);}
+/* TABLE */
+.tbl{width:100%;border-collapse:collapse;}
+.tbl thead tr{background:var(--n);}
+.tbl thead th{padding:11px 14px;text-align:right;font-weight:600;font-size:12px;color:rgba(237,233,227,.8);}
+.tbl tbody tr{border-bottom:1px solid var(--br);}
+.tbl tbody tr:nth-child(even){background:var(--c);}
+.tbl tbody tr:nth-child(odd){background:var(--w);}
+.tbl td{padding:11px 14px;font-size:13px;color:var(--t);line-height:1.6;vertical-align:top;}
+.tbl td:first-child{font-weight:700;white-space:nowrap;}
+/* CHECKLIST */
+.cl{display:flex;flex-direction:column;gap:8px;}
+.ci{display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:var(--w);border:1px solid var(--br);font-size:13.5px;color:var(--t);line-height:1.6;}
+.cd{width:7px;height:7px;border-radius:50%;background:var(--g);flex-shrink:0;margin-top:7px;}
+/* TAGS */
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.tag{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.12em;text-transform:uppercase;background:var(--g2);color:var(--g);border:1px solid rgba(185,154,91,.2);padding:4px 12px;}
+/* DVR */
+.dvr{height:1px;background:var(--br);margin:44px 0;}
+/* FOOT */
+.foot{background:var(--n);padding:28px 40px;text-align:center;border-top:1px solid rgba(209,199,186,.08);}
+.ftxt{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(209,199,186,.2);}
+/* PRINT */
+@media print{.nav .nr{display:none!important;}body{background:#fff;}.sdb{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}
+/* MOBILE */
+@media(max-width:768px){
+  .nav{padding:0 20px;}
+  .wrap{padding:44px 20px;}
+  .sdb{margin:40px -20px;padding:40px 20px;}
+  .g2,.g3,.g4{grid-template-columns:1fr;}
+  .flow{flex-direction:column;}
+  .fi{border-left:1px solid var(--br);border-top:none;}
+  .fi:first-child{border-top:1px solid var(--br);}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="logo"><span class="lw en">WOSOL</span><span class="ls en">CONCIERGE</span></a>
+  <div class="nr">
+    <a href="index.html" class="back en">← Hub</a>
+    <button class="pbtn en" onclick="window.print()">PDF</button>
+  </div>
+</nav>
+<div class="hero">
+  <div class="hi">
+    <span class="htag en">Page 02 · Sub-Brand Hub · 2026</span>
+    <h1 class="ht">نموذج عمل الشركتين الفرعيتين</h1>
+    <p class="hs en">Sub-Brand Business Model</p>
+    <div class="hdv"></div>
+  </div>
+</div>
+<div class="wrap">
+<div class="sec">
+  <span class="slb en">Revenue Sources</span>
+  <h2 class="st">كيف نربح؟</h2>
+  <div class="dv"></div>
+  <div class="g3">
+    <div class="card"><span class="ctg en">Service Fees</span><div class="ct">رسوم التخطيط والتنفيذ</div><p class="cb">نأخذ رسوم مقابل إدارة الطلب من البداية للنهاية.</p></div>
+    <div class="card"><span class="ctg en">Supplier Margin</span><div class="ct">هامش على الموردين</div><p class="cb">الفنادق والرحلات والهدايا — هامش ربح على كل عنصر.</p></div>
+    <div class="card"><span class="ctg en">VIP Packages</span><div class="ct">باقات VIP</div><p class="cb">باقات كاملة بسعر ثابت للعميل عالي المستوى.</p></div>
+    <div class="card"><span class="ctg en">Commissions</span><div class="ct">عمولات شراكات</div><p class="cb">من شركاء فنادق، طيران، وموردين موثوقين.</p></div>
+    <div class="card"><span class="ctg en">Membership</span><div class="ct">تحويل إلى العضوية</div><p class="cb">أعلى قيمة إيراد — عضوية سنوية متكررة.</p></div>
+    <div class="card"><span class="ctg en">B2B</span><div class="ct">هدايا وخدمات الشركات</div><p class="cb">عقود مع الشركات لخدمات الضيوف VIP والهدايا.</p></div>
+  </div>
+</div>
+<div class="sec">
+  <span class="slb en">VIP Filtering Criteria</span>
+  <h2 class="st">كيف نفلتر العميل المناسب للعضوية؟</h2>
+  <div class="dv"></div>
+  <div style="overflow-x:auto;">
+    <table class="tbl">
+      <thead><tr><th>المعيار</th><th>يُشير إلى</th></tr></thead>
+      <tbody>
+        <tr><td>الميزانية</td><td>+50,000 ريال للطلب الواحد = إمكانية عضوية</td></tr>
+        <tr><td>نوع الطلب</td><td>إدارة كاملة = يريد من يفكر نيابةً عنه</td></tr>
+        <tr><td>تكرار الطلب</td><td>سفر أو مناسبات متكررة = احتياج مستمر</td></tr>
+        <tr><td>الخصوصية</td><td>من يطلب الكتمان = يقدر الخدمة الحقيقية</td></tr>
+        <tr><td>السرعة</td><td>من يريد تنفيذ سريع = يدفع مقابل الراحة</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="sdb">
+  <div class="sdbi">
+    <div class="g2">
+      <div>
+        <span class="slb en" style="color:rgba(185,154,91,.6)">Sub-Brand</span>
+        <h3 class="std" style="margin-bottom:14px;">دور الشركتين الفرعيتين</h3>
+        <ul class="bl bld">
+          <li>يبيعان خدمة واضحة ومحددة</li>
+          <li>يولدان إيرادًا مباشرًا</li>
+          <li>يجمعان بيانات وتفضيلات العميل</li>
+          <li>يفلتران العملاء المناسبين للعضوية</li>
+        </ul>
+      </div>
+      <div>
+        <span class="slb en" style="color:rgba(185,154,91,.6)">WOSOL Concierge</span>
+        <h3 class="std" style="margin-bottom:14px;">دور الشركة الأم</h3>
+        <ul class="bl bld">
+          <li>تُدير العلاقة المستمرة مع العميل</li>
+          <li>تحفظ تفضيلاته وتستبق احتياجاته</li>
+          <li>توفر وصولًا حصريًا أوسع</li>
+          <li>تحقق أعلى إيراد عبر العضوية</li>
+        </ul>
+      </div>
+    </div>
+    <div class="kld" style="margin-top:24px;">"الشركتان تكسبان الآن، وتفتحان باب إيراد أكبر عبر العضوية."</div>
+  </div>
+</div>
+</div>
+<div class="foot"><div class="ftxt en">WOSOL CONCIERGE · SUB-BRAND GROWTH HUB · CONFIDENTIAL · 2026</div></div>
+</body>
+</html>
